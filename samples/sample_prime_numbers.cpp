@@ -18,7 +18,7 @@ int main()
 {
   int n, m, k, count;
 
-  setlocale(LC_ALL, "Russian");
+  setlocale(LC_ALL, "Russian"); //.UTF8
   cout << "Тестирование программ поддержки битового поля" << endl;
   cout << "             Решето Эратосфена" << endl;
   cout << "Введите верхнюю границу целых значений - ";
