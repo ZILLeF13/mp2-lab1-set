@@ -63,9 +63,9 @@ TSet& TSet::operator=(const TSet &s) // присваивание
 int TSet::operator==(const TSet &s) const // сравнение
 {
     if (MaxPower != s.MaxPower)
-        return 0;
+        return -1;
     if (BitField != s.BitField)
-        return 0;
+        return -1;
     return 1;
 }
 
@@ -75,7 +75,7 @@ int TSet::operator!=(const TSet &s) const // сравнение
         return 1;
     if (BitField != s.BitField)
         return 1;
-    return 0;
+    return -1;
 }
 
 TSet TSet::operator+(const TSet& s) // объединение
