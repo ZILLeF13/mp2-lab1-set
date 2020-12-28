@@ -332,6 +332,7 @@ ostream &operator<<(ostream &ostr, const TBitField &bf) // вывод
 		{
 			ostr << '0';
 		}
+		ostr << ' ';
 	}
 	return ostr;
 }
